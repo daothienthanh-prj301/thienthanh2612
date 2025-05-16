@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flat UI Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="css/style02TT.css" rel="stylesheet">
+</head>
+<body>
+    <div class="form-card">
+        <h2>HTML Form</h2>
+        <form action="index.html">
+            <div class="form-group">
+                <label>Textbook</label>
+                <input type="text" name="txtText" />
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="txtPassword" />
+            </div>
+
+            <input type="hidden" name="txtHidden" value="hiddenValue" />
+
+            <div class="form-group checkbox">
+                <label><input type="checkbox" name="chkCheck" value="ON" checked /> Male</label>
+            </div>
+
+            <div class="form-group">
+                <label>Status</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="rdoStatus" value="Single" checked /> Single</label>
+                    <label><input type="radio" name="rdoStatus" value="Married" /> Married</label>
+                    <label><input type="radio" name="rdoStatus" value="Divorsed" /> Divorsed</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Combobox</label>
+                <select name="txtCombo">
+                    <option value="Servlet">JSP and Servlet</option>
+                    <option value="EJB">EJB</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Multiple Select</label>
+                <select name="txtList" multiple size="3">
+                    <option value="Servlet" selected>JSP and Servlet</option>
+                    <option value="EJB" selected>EJB</option>
+                    <option value="Java" selected>Core Java</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>TextArea</label>
+                <textarea name="txtArea" rows="4">This is a parameters demo!</textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+                <button type="button" onclick="alert('JavaScript action')">JavaScript</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
